@@ -39,6 +39,8 @@ namespace Sunbreak.FitbitJsonConverter
             this.ConvertButton = new System.Windows.Forms.Button();
             this.OutputFileOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.InputFolderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +70,7 @@ namespace Sunbreak.FitbitJsonConverter
             this.InputFolderTextBox.Location = new System.Drawing.Point(13, 65);
             this.InputFolderTextBox.Name = "InputFolderTextBox";
             this.InputFolderTextBox.ReadOnly = true;
-            this.InputFolderTextBox.Size = new System.Drawing.Size(894, 31);
+            this.InputFolderTextBox.Size = new System.Drawing.Size(758, 31);
             this.InputFolderTextBox.TabIndex = 2;
             // 
             // OutputFileTextBox
@@ -78,7 +80,7 @@ namespace Sunbreak.FitbitJsonConverter
             this.OutputFileTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", settings1, "OutputFileName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.OutputFileTextBox.Location = new System.Drawing.Point(13, 160);
             this.OutputFileTextBox.Name = "OutputFileTextBox";
-            this.OutputFileTextBox.Size = new System.Drawing.Size(894, 31);
+            this.OutputFileTextBox.Size = new System.Drawing.Size(758, 31);
             this.OutputFileTextBox.TabIndex = 3;
             // 
             // InputFolderSelectButton
@@ -104,7 +106,7 @@ namespace Sunbreak.FitbitJsonConverter
             // ConvertButton
             // 
             this.ConvertButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConvertButton.Location = new System.Drawing.Point(795, 19);
+            this.ConvertButton.Location = new System.Drawing.Point(659, 19);
             this.ConvertButton.Name = "ConvertButton";
             this.ConvertButton.Size = new System.Drawing.Size(112, 34);
             this.ConvertButton.TabIndex = 6;
@@ -118,25 +120,38 @@ namespace Sunbreak.FitbitJsonConverter
             this.OutputFileOpenFileDialog.DefaultExt = "*.csv";
             this.OutputFileOpenFileDialog.Tag = " ";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.ConvertButton);
+            this.panel1.Controls.Add(this.OutputFileSelectButton);
+            this.panel1.Controls.Add(this.InputFolderSelectButton);
+            this.panel1.Controls.Add(this.OutputFileTextBox);
+            this.panel1.Controls.Add(this.InputFolderTextBox);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(-3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(779, 213);
+            this.panel1.TabIndex = 7;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 248);
-            this.Controls.Add(this.ConvertButton);
-            this.Controls.Add(this.OutputFileSelectButton);
-            this.Controls.Add(this.InputFolderSelectButton);
-            this.Controls.Add(this.OutputFileTextBox);
-            this.Controls.Add(this.InputFolderTextBox);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(778, 213);
+            this.Controls.Add(this.panel1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", settings1, "FormLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.DataBindings.Add(new System.Windows.Forms.Binding("WindowState", settings1, "FormState", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.MinimumSize = new System.Drawing.Size(800, 269);
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "FitBit Json Converter";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -151,6 +166,7 @@ namespace Sunbreak.FitbitJsonConverter
         private System.Windows.Forms.Button ConvertButton;
         private System.Windows.Forms.OpenFileDialog OutputFileOpenFileDialog;
         private System.Windows.Forms.FolderBrowserDialog InputFolderBrowserDialog;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
