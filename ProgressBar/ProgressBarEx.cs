@@ -173,13 +173,15 @@ namespace System.Windows.Forms
 	{
 		public static ProgressBarEx CreateProgressBar(this Form hostingForm, string text)
 		{
+			var width = 280;
+
 			ProgressBarEx progressBar = new()
 			{
 				Style = ProgressBarStyle.Marquee,
 				Visible = true,
 				Enabled = true,
-				Location = new Drawing.Point(Math.Max(0, (hostingForm.Width - 180) / 2), Math.Max(0, (hostingForm.Height - 20) / 2)),
-				Size = new Drawing.Size(280, 20),
+				Location = new Drawing.Point(Math.Max(0, (hostingForm.Width - width) / 2), Math.Max(0, (hostingForm.Height - 20) / 2)),
+				Size = new Drawing.Size(width, 20),
 				Minimum = 1,
 				Maximum = 100,
 				Step = 1,
