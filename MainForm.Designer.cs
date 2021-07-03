@@ -30,6 +30,7 @@ namespace Sunbreak.FitbitJsonConverter
         private void InitializeComponent()
         {
             Sunbreak.FitbitJsonConverter.Properties.Settings settings1 = new Sunbreak.FitbitJsonConverter.Properties.Settings();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.InputFolderTextBox = new System.Windows.Forms.TextBox();
@@ -144,7 +145,7 @@ namespace Sunbreak.FitbitJsonConverter
             this.ClientSize = new System.Drawing.Size(778, 213);
             this.Controls.Add(this.panel1);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", settings1, "FormLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.DataBindings.Add(new System.Windows.Forms.Binding("WindowState", settings1, "FormState", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(800, 269);
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

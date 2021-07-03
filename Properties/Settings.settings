@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FitbitJsonConverter.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sunbreak.FitbitJsonConverter.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="InitialInputFilesFolder" Type="System.String" Scope="User">
@@ -7,9 +7,6 @@
     </Setting>
     <Setting Name="OutputFileName" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="FormState" Type="System.Windows.Forms.FormWindowsState" Scope="User">
-      <Value Profile="(Default)">Normal</Value>
     </Setting>
     <Setting Name="FormLocation" Type="System.Drawing.Point" Scope="User">
       <Value Profile="(Default)">0, 0</Value>

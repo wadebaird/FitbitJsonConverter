@@ -7,6 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Sunbreak.FitbitJsonConverter</AssemblyName>
     <RootNamespace>Sunbreak.FitbitJsonConverter</RootNamespace>
+    <ApplicationIcon>Resources\ShortcutIcon128x128.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
