@@ -11,12 +11,12 @@ You may use this program for your own conversion, however use at your own risk o
 
 How to use:
 
-Download the https://github.com/wadebaird/FitbitJsonConverter/blob/master/Sunbreak.FitbitJsonConverter%20Setup.zip
-Unzip to a folder
-Run setup.exe (this program is not "signed" so it will say it's from an unknown publisher, accept if you like)
-This should install the .Net runtime as well as the program and create a shortcut on your desktop.
-Run the program and output the files on your machine.
-The output should be in multiple .CSV files and should be importable to Garmin Connect. The sleep data won't seem to import for me, and I get an error when attempting it. All of my research online says Garmin won't take in the sleep data. So I just have only tried the Body and Activities files.
-Enjoy and let me know if there are any problems / questions
+* Download the https://github.com/wadebaird/FitbitJsonConverter/blob/master/Sunbreak.FitbitJsonConverter%20Setup.zip
+* Unzip to a folder
+* Run setup.exe (this program is not "signed" so it will say it's from an unknown publisher, accept if you like)
+* This should install the .Net runtime as well as the program and create a shortcut on your desktop.
+* Run the program and output the files on your machine.
+* The output should be in multiple .CSV files and should be importable to Garmin Connect. The sleep data won't seem to import for me, and I get an error when attempting it. All of my research online says Garmin won't take in the sleep data. So I just have only tried the Body and Activities files.
+* Enjoy and let me know if there are any problems / questions
 
 wadeb@sunbreaksoftware.com
