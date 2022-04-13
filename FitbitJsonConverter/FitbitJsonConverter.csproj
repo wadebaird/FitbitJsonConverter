@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>true</ImplicitUsings>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Sunbreak.FitbitJsonConverter</AssemblyName>
     <RootNamespace>Sunbreak.FitbitJsonConverter</RootNamespace>
@@ -12,6 +13,12 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sunbreak.Common.WinForms">
+      <HintPath>..\Sunbreak.Common.WinForms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
